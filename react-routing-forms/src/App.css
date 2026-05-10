@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* NAVBAR */
+nav {
+  background: #1f2937;
+  padding: 12px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+nav li a:hover {
+  background: #374151;
+  color: #facc15;
+}
+
+/* PAGE CONTAINER */
+div {
+  padding: 20px;
+}
+
+/* HEADINGS */
+h1 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* FORM CARD STYLE */
+form {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* ERROR TEXT */
+p {
+  margin: -10px 0 10px;
+  font-size: 13px;
+}
+
+p[style] {
+  color: red;
+}
