@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 const connectDB = async () => {
 try {
-await mongoose.connect('mongodb+srv://jonel:ventura@cluster0.cktujo7.mongodb.net/?appName=Cluster0', {
+await mongoose.connect('mongodb://127.0.0.1:27017/mongoose_lab', {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 });
 console.log('MongoDB connected successfully');
 } catch (error) {
 console.error('MongoDB connection error:', error);
-process.exit(1); 
+process.exit(1); // Exit process with failure
 }
 };
 
